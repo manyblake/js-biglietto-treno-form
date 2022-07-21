@@ -12,26 +12,42 @@
     <div class="container">
       <h1>Calcola il prezzo del tuo biglietto</h1>
       <div class="form">
-        <div class="form__col">
-          <label for="username">Nome Cognome</label>
+        <div class="form__row">
+          <div class="form__col">
+            <label for="username">Nome Cognome</label>
 
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Nome e Cognome"
-          />
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Nome e Cognome"
+            />
+          </div>
+
+          <div class="form__col">
+            <label for="km">Km da percorrere</label>
+            <input
+              type="text"
+              id="km"
+              name="km"
+              placeholder="distanza (in Km)"
+            />
+          </div>
+
+          <div class="form__col">
+            <label for="age">Fascia d'età</label>
+            <select name="age" id="age">
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="minorenne">Minorenne</option>
+              <option value="over65">Over65</option>
+            </select>
+          </div>
         </div>
 
-        <input type="text" id="km" name="km" placeholder="distanza (in Km)" />
-
-        <select name="age" id="age">
-          <option value="maggiorenne">Maggiorenne</option>
-          <option value="minorenne">Minorenne</option>
-          <option value="over65">Over65</option>
-        </select>
-
-        <input id="generate-ticket" type="submit" />
+        <div class="buttons-box">
+          <input id="generate-ticket" type="submit" value="Genera" />
+          <input id="cancel" type="submit" value="Annulla" />
+        </div>
       </div>
 
       <table id="ticket">
