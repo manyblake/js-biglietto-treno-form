@@ -10,7 +10,7 @@ h2 {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 body {
@@ -63,4 +63,41 @@ select {
   display: flex;
   gap: 16px;
   justify-content: center;
+}
+
+#ticket {
+  background-color: white;
+  padding: 24px;
+}
+
+#ticket table {
+  width: 100%;
+}
+
+#ticket h3 {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0 16px;
+}
+
+thead th:first-of-type,
+.traveler {
+  background-color: #808080;
+  white-space: nowrap;
+  padding: 16px;
+}
+
+.username-style {
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
 }
