@@ -13,9 +13,8 @@ const PRICE_FOR_KM = 0.21,
   DISCOUNT_UNDER_18 = 0.2,
   DISCOUNT_OVER_65 = 0.4;
 
-const totalPrice = km.value * PRICE_FOR_KM;
-
 button.addEventListener("click", function () {
+  const totalPrice = km.value * PRICE_FOR_KM;
   let discount = 0;
   if (!isNaN(km.value)) {
     if (age.value === `minorenne`) {
